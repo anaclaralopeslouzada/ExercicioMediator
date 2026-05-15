@@ -14,16 +14,12 @@ No contexto deste chat, os componentes do padrão foram aplicados da seguinte fo
 3.  **Colleague (Usuario):** Classe abstrata que define a base para os participantes. Ela possui uma referência para o Mediador, mas "não sabe" que os outros usuários existem.
 4.  **Concrete Colleague (Participante):** Implementação real do utilizador que envia e recebe notificações através do Mediador.
 
-## Como Executar o Projeto
-
-
-## Estrutura de Arquivos
-- `IChatMediator.cs`: Interface do Mediador.
-- `SalaDeChat.cs`: Implementação do Mediador Concreto.
-- `Usuario.cs`: Classe base abstrata para os utilizadores.
-- `Participante.cs`: Implementação concreta dos utilizadores.
-- `Program.cs`: Ponto de entrada (Main) onde a simulação é configurada e executada.
-
 ## Vantagens Observadas
 - **Baixo Acoplamento:** Adicionar um novo participante não exige alteração em nenhum outro participante já existente.
 - **Lógica Centralizada:** Se quisermos adicionar um filtro de palavras ou um log de mensagens, basta alterar a classe `SalaDeChat`.
+
+## Como rodar o código:
+O repositório já contém o arquivo de projeto (`.csproj`). Para executar, basta abrir a pasta no terminal e digitar:
+
+```bash
+dotnet run
